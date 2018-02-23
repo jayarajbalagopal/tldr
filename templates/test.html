@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	    {% load staticfiles %}
+		<meta charset="utf-8">
+	</head>
+<body>
+	<form method="POST" action="." enctype="multipart/form-data">{%csrf_token%}
+		<div>
+			{{form.as_p}}
+			<input type="submit" value="upload document" class="button" style="margin-top:20px;">
+		</div>
+	</form>
+</body>
+</html>
