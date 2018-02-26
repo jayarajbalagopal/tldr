@@ -1,0 +1,93 @@
+<html>
+<head>
+<link rel="icon" type="image/png" sizes="72x72" href="/static/picture/doc.png">
+	<title>Shortn</title>
+	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js">					</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+
+</style>
+<body class="p-3 mb-2 bg-light text-black" style="overflow-x: hidden;">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark rounded">
+  <a class="navbar-brand" href="{% url 'shortn' %}" style="font-size:50px;color:white;"><strong>Shortn.</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}" style="font-size:30px;padding-right:20px;color:white;">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+     <a href="{% url 'aboutus' %}"> <button class="btn btn-secondary my-2 my-sm-0" type="button" style="font-size:25px;">About us.</button></a>
+    </form>
+  </div>
+</nav>
+
+
+<p style="font-size:25px;color:black;font-style: italic;padding-top: 50px;padding-bottom: 50px">
+  Shortn is text summarization tool which helps people to save time spent in reading large articles,  documents, etc. Students can also use it for summarizing the articles in the textbook so as to make studying faster and simpler. The tool also converts complex articles into a form that can be understood by a common man.
+</p>
+
+
+<div class="jumbotron">
+  <div class="row">
+    <div class="row mx-auto">
+    <p style="font-size:55px;font-weight:bold;color:black;">
+    THE TEAM :
+    </p>
+    </div>
+  </div>  
+
+  <div class="row" style="padding-top:30px; padding-left:50px;">
+    <div class="row mr-auto">
+      <img src="/static/picture/jay.jpg" class="rounded-circle" style="width:180px;height:180px;"></img>
+      <p style="padding-top: 70px; padding-left: 50px;font-size:30px;"><strong>JAYARAJ BALAGOPAL</strong></p>
+    </div>
+
+    <div class="row mr-auto" >
+      <img src="/static/picture/kiki.jpg" class="rounded-circle" style="width:180px;height:180px;"></img>
+            <p style="padding-top: 70px; padding-left: 50px;font-size:30px;"><strong>CICCI MARIA XAVIER</strong></p>
+
+    </div>
+  </div>
+
+  <div class="row" style="padding-top:100px; padding-left:50px;">
+    <div class="row mr-auto">
+      <img src="/static/picture/rvr.jpg" class="rounded-circle" style="width:180px;height:180px;"></img>
+            <p style="padding-top: 70px; padding-left: 50px;font-size:30px;"><strong>RAHUL V REJI</strong></p>
+
+    </div>
+
+    <div class="row mx-auto" style="padding-left: 180px">
+      <img src="/static/picture/kp.JPG" class="rounded-circle" style="width:180px;height:180px;"></img>
+            <p style="padding-top: 70px; padding-left: 50px;font-size:30px;"><strong>KRISHNAPRIYA PADIKKAL</strong></p>
+
+    </div>
+  </div>
+</div>
+
+
+  <div class="row">
+  <div class="row mx-auto" style="align-content: center;">
+      <a href="https://github.com/jayarajbalagopal/tldr" style="color: #212529;">
+      <i class="fa fa-github" aria-hidden="true"  style="font-size:100px;padding: 20px;"></i></a>
+      <a href="#" style="color: #212529;"><i class="fa fa-facebook" aria-hidden="true"  style="font-size:100px;padding: 20px;"></i></a>
+      <a href="#" style="color: #212529;"><i class="fa fa-instagram" aria-hidden="true"  style="font-size:100px;padding: 20px;"></i></a>
+  </div>
+
+  </div>
+
+ 
+
+</body>
+</html>

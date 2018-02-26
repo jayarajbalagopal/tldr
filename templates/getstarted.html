@@ -1,0 +1,69 @@
+<html>
+<head>
+<link rel="icon" type="image/png" sizes="72x72" href="/static/picture/doc.png">
+	<title>Shortn</title>
+	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js">					</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+
+</style>
+<body class="p-3 mb-2 bg-light text-black">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark rounded">
+  <a class="navbar-brand" href="{% url 'shortn' %}" style="font-size:50px;color:white;"><strong>Shortn.</strong></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'home' %}" style="font-size:30px;padding-right:20px;color:white;">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <a href="{% url 'aboutus' %}"><button class="btn btn-secondary my-2 my-sm-0" type="button" style="font-size:25px;">About us.</button></a>
+    </form>
+  </div>
+</nav>
+<div class="container-fluid">
+	<div class="row" style="padding-top:60px;">
+		<div class="row mx-auto">
+		<img src="/static/picture/man.jpg"></img>				
+		</div>
+	</div>
+	<div class="row" style="padding-top:70px;">
+		<div class="row mx-auto">
+		<h1 style="font-size:75px;"><strong>Tired of reading long articles?</strong></h1> 				
+		</div>
+	</div>
+	<div class="row" style="padding-top:100px;">
+		<div class="row mx-auto">
+		<img src="/static/picture/scroll-down.gif" style="height:200px;width:300px;"></img>
+		</div>
+	</div>
+	<div class="jumbotron">
+	
+	<div class="row">
+		<div class="row mx-auto">
+		<p style="font-size:55px;font-weight:bold;color:black;font-style:italic;">
+		Use <strong>Shortn</strong> to obtain the summary of your long article.
+		</p>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="row mx-auto">
+		<a href="{% url 'home' %}"><button type="button" class="btn btn-danger rounded" style="font-size:40px;padding-left:20px;padding-right:20px;">Get Started!</button></a>
+		</div>
+	</div>
+	
+	</div>
+</div>
+</body>
+</html>
+
