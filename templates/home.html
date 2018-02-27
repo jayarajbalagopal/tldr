@@ -89,11 +89,11 @@ function wheel(){
 		</div>
 	</div>
     <form method="POST" action="." enctype="multipart/form-data" id="form">{%csrf_token%}
-      <div class="row" style="padding-top:50px;">
+      <div class="row" style="padding-top:20px;">
         <div class="row mx-auto">
           <div class="fileUpload btn btn-danger" style="font-size:25px;padding-right:50px;padding-left:50px;">
           <span><strong>Upload</span></strong>
-            {{form.as_p}}
+            {{form.docfile}}
           </div>
         </div>
       </div>

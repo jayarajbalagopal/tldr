@@ -48,7 +48,7 @@ class shortnView(TemplateView):
 		context = {}
 		return render(request,"home.html",context)
 
-
+import sys
 class generatesummary(TemplateView):
 	def get(self,request,*args,**kwargs):
 		context = {
@@ -59,6 +59,8 @@ class generatesummary(TemplateView):
 	def post(self,request,*args,**kwargs):
 		summary = ""
 		flag = 0 
+		cratio = request.POST.get('cratio')
+		sys.argv[1]=cratio
 		execfile(os.path.join(BASE_DIR,'shortn/Extractive/driver.py'))
 		with open(os.path.join(BASE_DIR,'shortn/Outputs/out.txt'),'rb') as fp:
 			summary = fp.read()

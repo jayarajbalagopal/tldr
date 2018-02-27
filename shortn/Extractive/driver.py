@@ -5,10 +5,10 @@ from tldr.settings import BASE_DIR
 def getsummary():
 
 	try:
-		filename = sys.argv[1]	
+		cratio = sys.argv[1]
 		if(os.path.exists(os.path.join(BASE_DIR,'shortn/Inputs/art.txt'))):
 			os.system('javac '+os.path.join(BASE_DIR,'shortn/Extractive/Controller.java'))
-			os.system('java -cp '+os.path.join(BASE_DIR,'shortn/Extractive Controller '+os.path.join(BASE_DIR,'shortn/Inputs/art.txt')))
+			os.system('java -cp '+os.path.join(BASE_DIR,'shortn/Extractive Controller '+os.path.join(BASE_DIR,'shortn/Inputs/art.txt ')+cratio))
 			# file = "java Controller ../Inputs/"
 			# file = file + filename
 			# os.system(file)

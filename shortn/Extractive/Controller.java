@@ -17,6 +17,7 @@ public class Controller {
 	List<Hashtable<String,Double>> score;
 	int [] degree;
 	public static String filename;
+	public static float ratio;
 		
 	public String getSummary() throws Exception{
 		
@@ -82,7 +83,7 @@ public class Controller {
         
        
         int k=1;
-        double x=(0.4*count);
+        double x=(ratio*count);
         int max=(int)x;
         int m=1;
         for(String s:sentences)
@@ -180,6 +181,7 @@ public class Controller {
 		filename = a[0];
 		Controller c = new Controller();
 
+		ratio = Float.parseFloat(a[1]);
 		//System.out.println(c.getSummary());
 		PrintWriter writer = new PrintWriter("/home/kannan/MainProject/tldr/shortn/Outputs/out.txt", "UTF-8");
 		writer.println(c.getSummary());

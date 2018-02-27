@@ -65,6 +65,11 @@ function startwheel(){
 <form method="POST" action="." enctype="multipart/form-data">{%csrf_token%}
   <div class="row" style="padding-top:50px;">
     <div class="row mx-auto">
+    <input type="text" class="form-control" placeholder="compression ratio" name="cratio">
+    </div>
+  </div>
+  <div class="row" style="padding-top:10px;">
+    <div class="row mx-auto">
       <button type="submit" class="btn btn-info" onclick="startwheel();" style="font-size:30px;padding-right:50px;padding-left:50px;">
         <strong>Generate summary</strong>
       </button>
@@ -73,7 +78,7 @@ function startwheel(){
 </form>
 <div class="container">
 {% if flag %}
-<p class="rcorners2">{{ sum }}</p>
+<p class="rcorners2 jumbotron">{{ sum }}</p>
 {% endif %}
 </div>
 <!-- Modal for loading -->
